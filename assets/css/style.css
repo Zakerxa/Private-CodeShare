@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosansmyanmar.css");
+body,
+html {
+    font-family: "Noto Sans Myanmar", sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #03132c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #27335f, #27386e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #27335f, #27386e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.alertbox {
+    background: #03132c;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, #03132c), color-stop(48%, #0e3f74), to(#0a4e98));
+    background: linear-gradient(180deg, #fff 7%, #fff 48%, #fff 100%);
+}
+
+.offcanvasBg {
+    background: rgba(35, 35, 44, 0.97);
+}
+
+.homelogo {
+    box-shadow: 3px 3px 20px rgba(240, 255, 253, 0.849);
+    border-radius: 100%;
+    /* border: 1px solid rgba(0, 0, 0, 0); */
+}
+
+@keyframes rotateStyle {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 2px 2px 20px #55e1e6;
+    }
+    10% {
+        transform: rotate(36deg);
+        box-shadow: 3px 3px 25px #3adfeb;
+    }
+    20% {
+        transform: rotate(72deg);
+        box-shadow: 4px 4px 30px #1dd4f5;
+    }
+    30% {
+        transform: rotate(108deg);
+        box-shadow: 2px 2px 20px #dfeb7a;
+    }
+    40% {
+        transform: rotate(144deg);
+        box-shadow: 3px 3px 25px #cff232;
+    }
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 4px 4px 30px #e4f127;
+    }
+    60% {
+        transform: rotate(216deg);
+        box-shadow: 3px 3px 25px #a5e96d;
+    }
+    70% {
+        transform: rotate(252deg);
+        box-shadow: 3px 3px 21px #4be42c;
+    }
+    80% {
+        transform: rotate(288deg);
+        box-shadow: 4px 4px 30px #7df70b;
+    }
+    90% {
+        transform: rotate(324deg);
+        box-shadow: 3px 3px 21px #f04646;
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 4px 4px 30px #f13514;
+    }
+}
+
+.router {
+    border: none;
+    outline: none;
+    padding: 5px 16px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+/* Style the active class, and buttons on mouse-over */
+
+.active {
+    font-size: 19px;
+    border-bottom: 3px solid #0051ff;
+}
+
+.uploadbtn .btn-grad {
+    background-image: -webkit-gradient(linear, left top, right top, from(#7474BF), color-stop(51%, #348AC7), to(#7474BF));
+    background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
+}
+
+.uploadbtn .btn-grad {
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+.uploadbtn .btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
