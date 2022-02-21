@@ -1,7 +1,7 @@
 <?php 
 
 define('MYSQL_USER','root');
-define('MYSQL_PASSWORD','yourpassword');
+define('MYSQL_PASSWORD','Pass@1234');
 define('MYSQL_HOST','localhost');
 define('MYSQL_DATABASE','codeshare');
 

@@ -3,11 +3,11 @@ include "config/db-config.php";
 include "assets/randomname.php";
 include "assets/randomint.php";
 
-
 if (isset($_POST['username'])) {
     
     if (empty($_POST['username'])) {
         echo "empty";
+        exit();
     } else {
         $username = htmlspecialchars("CS" . RandomString(3) . "-" . $_POST['username'], ENT_QUOTES, 'UTF-8');
         $password = RandomName(15);

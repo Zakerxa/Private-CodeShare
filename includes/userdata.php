@@ -15,7 +15,7 @@ if (isset($_COOKIE['name'])) {
   if ($stmt->rowCount() >= 1) {
     foreach ($data as $value) {
       $row['name'] = $value['author'];
-      $row['data'] = $value['data'];
+      $row['data'] = htmlspecialchars_decode(trim($value['data']), ENT_QUOTES);
       $row['date'] = timeZone($value['created_date']);
       $row['otk'] = $value['otk'];
       array_push($container, $row);
