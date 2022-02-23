@@ -8,7 +8,7 @@ $container = array();
 if (isset($_COOKIE['name'])) {
   
   $name = $_COOKIE['name'];
-  $stmt = $pdo->prepare("SELECT * FROM cp_projects WHERE author = :author");
+  $stmt = $pdo->prepare("SELECT * FROM cp_projects WHERE author = :author ORDER BY id DESC");
   $stmt->execute(array(':author' => $name));
   $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -24,4 +24,5 @@ if (isset($_COOKIE['name'])) {
   echo json_encode($container, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_NUMERIC_CHECK);
 } else {
   echo json_encode($container, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_NUMERIC_CHECK);
+  header("location:../");
 }
