@@ -16,8 +16,8 @@ if (isset($_POST['username'])) {
         $done = $stmt->execute(array(':username' => $username, ':password' => $password));
 
         if ($done) {
-            setcookie("name", $username, time() + 60 * 60 * 24 * 30);
-            setcookie("key", $password, time() + 60 * 60 * 24 * 30);
+            setcookie("name", $username, time() + 60 * 60 * 24 * 10);
+            setcookie("key", $password, time() + 60 * 60 * 24 * 10);
             echo "success";
         }
     }

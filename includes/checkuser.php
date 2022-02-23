@@ -7,7 +7,6 @@ if (isset($_POST['name'])) {
     if (empty($_POST['name'])) {
         echo "empty";
     } else {
-
         $username = $_POST['name'];
         $password = $_POST['pass'];
 
